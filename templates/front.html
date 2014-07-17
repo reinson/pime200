@@ -1,0 +1,155 @@
+<html>
+<head>
+    <title>Tuhat</title>
+</head>    
+    <body>
+        <h2>M&#228ng nr {{seis[0].game_id}}</h2>
+
+<form method="post">
+
+<table border="1">
+<tr>
+<th>Nimi</th>
+<th>Tihid</th>
+<th>Pakkumine</th>
+<th>Pime</th>
+<th>4x9</th>
+</tr>
+
+<tr>
+
+<td>{{Player1}}</td>
+<td><input type="text" name="tihid1" value="{{tihid1}}" size="4"></td>
+<td><input type="text" name="pakkumine1" value="{{pakkumine1}}" size="6"></td>
+<td><input type="checkbox" name="pime" value="pl1"></td>
+<td><input type="checkbox" name="neli9" value="pl1"></td>
+</tr>
+
+
+<tr>
+<td>{{Player2}}</td>
+<td><input type="text" name="tihid2" value="{{tihid2}}" size="4"></td>
+<td><input type="text" name="pakkumine2" value="{{pakkumine2}}" size="6"></td>
+<td><input type="checkbox" name="pime" value="pl2"></td>
+<td><input type="checkbox" name="neli9" value="pl2"></td>
+</tr>
+
+
+<tr>
+<td>{{Player3}}</td>
+<td><input type="text" name="tihid3" value="{{tihid3}}" size="4"></td>
+<td><input type="text" name="pakkumine3" value="{{pakkumine3}}" size="6"></td>
+<td><input type="checkbox" name="pime" value="pl3"></td>
+<td><input type="checkbox" name="neli9" value="pl3"></td>
+</tr>
+
+</table>
+
+<br>
+
+<table border="1">
+<tr>
+<th>Nimi</th>
+<th>Risti</th>
+<th>Poti</th>
+<th>&#196rtu</th>
+<th>Ruutu</th>
+</tr>
+<tr>
+
+<td>{{Player1}}</td>
+<td><input type="checkbox" name="risti" value="pl1"></td>
+<td><input type="checkbox" name="poti" value="pl1"> </td>
+<td><input type="checkbox" name="artu" value="pl1"> </td>
+<td> <input type="checkbox" name="ruutu" value="pl1"></td>
+</tr>
+
+<tr>
+
+<td>{{Player2}}</td>
+<td><input type="checkbox" name="risti" value="pl2"> </td>
+<td><input type="checkbox" name="poti" value="pl2"> </td>
+<td><input type="checkbox" name="artu" value="pl2"> </td>
+<td><input type="checkbox" name="ruutu" value="pl2"> </td>
+</tr>
+
+<tr>
+
+<td>{{Player3}}</td>
+<td> <input type="checkbox" name="risti" value="pl3"></td>
+<td><input type="checkbox" name="poti" value="pl3"> </td>
+<td><input type="checkbox" name="artu" value="pl3"> </td>
+<td> <input type="checkbox" name="ruutu" value="pl3"></td>
+</tr>
+
+
+
+
+</table>
+
+
+
+
+
+
+            <label>
+                <div class="error">{{error}}</div>
+            </label>
+
+            <input type="submit">
+
+
+         </form>
+
+
+
+        <form method="post">
+
+
+<table border="1">
+<tr>
+<th>{{seis[0].mangija1}}</th>
+<th>{{seis[0].mangija2}}</th>
+<th>{{seis[0].mangija3}}</th>
+<th>Pakkuja</th>
+<th>Pakkumine</th>
+
+{% for nr in seis %}
+</tr>
+<tr>
+<td>{{nr.punktid_tabelis1}}</td>
+<td>{{nr.punktid_tabelis2}}</td>
+<td>{{nr.punktid_tabelis3}}</td>
+<td>{{nr.pakkuja}}</td>
+<td>{{nr.pakkumine}}</td>
+</tr>
+
+{% endfor %}
+</table>            
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

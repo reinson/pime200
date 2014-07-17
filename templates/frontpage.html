@@ -1,0 +1,32 @@
+
+<html>
+<head>
+    <title>Tuhat</title>
+    <meta charset="utf-8" />
+</head>    
+    <body>
+        <h2>Tuhat</h2>
+
+
+
+<a href="/newgame">Alusta uut m&#228ngu</a>
+
+
+
+        <hr>
+        Eelmised m&#228ngud:
+        {% for nr in seis %}
+            <div class="nr">
+                <div class="art-title">
+                 {{nr.mangija1}} {{nr.punktid_tabelis1}}; {{nr.mangija2}} {{nr.punktid_tabelis2}}; {{nr.mangija3}} {{nr.punktid_tabelis3}};
+                 
+                  <a href="/{{nr.game_id}}"> J&#228tka</a>
+
+                  
+
+                 </div>
+               
+            </div>
+        {% endfor %}
+
+</body>
