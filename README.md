@@ -1,2 +1,2 @@
-See on veebirakendus kaardimäng Tuhane punktide lugemiseks.
-Rakendus asub pime200.appspot.com
+Web app for keeping score of a card game called "thousand". The application is in Estonian.
+pime200.appspot.com
